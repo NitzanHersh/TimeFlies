@@ -5,8 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Collectable
-  - Camera
   - Obstacle
+  - Border
+  - Platform
   layers:
   - Default
   - TransparentFX
