@@ -90,6 +90,7 @@ GameObject:
   - component: {fileID: 6026924629775845628}
   - component: {fileID: 6026924629776648414}
   - component: {fileID: 6026924629777615390}
+  - component: {fileID: 6786104471501067254}
   m_Layer: 0
   m_Name: chem_set1
   m_TagString: Untagged
@@ -158,6 +159,25 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!95 &6786104471501067254
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6026924629775357148}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b12d8807878b23c4f82f7047163688c6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6026924629775357150
 GameObject:
   m_ObjectHideFlags: 0

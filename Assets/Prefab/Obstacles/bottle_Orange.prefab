@@ -89,6 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4742593805290874699}
   - component: {fileID: 1675700535095219950}
+  - component: {fileID: 7217282502429407386}
   m_Layer: 0
   m_Name: bottle_Orange
   m_TagString: Obstacle
@@ -126,6 +127,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.3095055, y: 7.635354, z: 2.295803}
   m_Center: {x: 0.03289938, y: 3.5967221, z: 0.006608963}
+--- !u!95 &7217282502429407386
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4742593805290781547}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 855629419e4a4ee40b52248e21371140, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4742593805290781549
 GameObject:
   m_ObjectHideFlags: 0
