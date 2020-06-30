@@ -13,7 +13,13 @@ public class ConstantMove : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         //rb.AddForce(Speed);
         rb.velocity = Speed;
+        
 
+    }
+
+    private void Update()
+    {
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -4.5f, 4.5f), transform.position.y, transform.position.z);
     }
 
 }

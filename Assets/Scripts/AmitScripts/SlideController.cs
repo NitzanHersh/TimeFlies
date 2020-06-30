@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class SlideController : MonoBehaviour
 {
-    /*
+    
     public float Speed;
 
     private Vector2? _previousMousePosition = null; // we use '_' because it's a private variable. we use ? to allow Vector 2 to be null
     
     private void Update()
+
     {
         if (Input.GetMouseButton(0))  // GetMouseButtonUp or GetMouseButtonDown adds a bool value for ONE frame only. GetMouseButton Gets it as long as the button is held // 0 means Left mouse button
 
@@ -28,7 +29,7 @@ public class SlideController : MonoBehaviour
         else _previousMousePosition = null;
         
     }
-*/
+/*
 
 
 public float Speed;
@@ -61,4 +62,5 @@ if (Input.GetMouseButton(0))
 else _previousMousePosition = null;
 
 }
+*/
 }
