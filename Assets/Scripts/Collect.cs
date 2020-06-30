@@ -5,25 +5,35 @@ using UnityEngine.UI;
 
 public class Collect : MonoBehaviour
 {
-    public static int score = 0;
-    public Text scoreText;
+    public static int CollectedTimeFlies = 0;
+    public int CurrentFliesAmout;
+    public Text NumberOfTImeFliesCollected;
+    public bool IsItEnoughFlies = false;
 
 
     // Update is called once per frame
     void Update()
     {
-        scoreText.text = "Score " + score.ToString();
+        NumberOfTImeFliesCollected.text = "You got" + " " + CollectedTimeFlies.ToString() + " " + " Time Flies!";
 
+   
     }
 
     private void OnTriggerEnter(Collider collider)
     {
-        if (collider.CompareTag("Collectable"))
+        if (collider.gameObject.tag == "TimeFly")
         {
-            score++;
+            CollectedTimeFlies++;
+            CurrentFliesAmout++;
             collider.gameObject.SetActive(false);
+            Debug.Log("Collected Fly");
 
+            if (CurrentFliesAmout >= 2)
+            {
+                IsItEnoughFlies = true;
+            }
+         
         }
-    }
 
+    }
 }

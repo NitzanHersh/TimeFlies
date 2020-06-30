@@ -8,6 +8,19 @@ TagManager:
   - Obstacle
   - Border
   - Platform
+  - SpeedPadLow
+  - SpeedPadMedium
+  - SpeedPadHigh
+  - JumpPadLow
+  - JumpPadMedium
+  - JumpPadHigh
+  - SlowPadMedium
+  - SlowPadHeavy
+  - SlowPadLow
+  - SoftBackwardsPusher
+  - MediumBackwardsPusher
+  - HardBackwardsPusher
+  - TimeFly
   layers:
   - Default
   - TransparentFX

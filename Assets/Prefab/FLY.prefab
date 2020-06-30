@@ -91,8 +91,8 @@ GameObject:
   - component: {fileID: 5686871374058892425}
   - component: {fileID: 1903313380872519767}
   m_Layer: 0
-  m_Name: Fly
-  m_TagString: Collectable
+  m_Name: FLY
+  m_TagString: TimeFly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,13 +106,13 @@ Transform:
   m_GameObject: {fileID: 5686871374058990123}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 20, y: 20, z: 20}
+  m_LocalScale: {x: 150, y: 150, z: 150}
   m_Children:
   - {fileID: 5686871374058501641}
   - {fileID: 5686871374058501647}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &5686871374058892425
 Animator:
   serializedVersion: 3
