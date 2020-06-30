@@ -21,6 +21,7 @@ public class SlideController : MonoBehaviour
             {
                 var delta = (_previousMousePosition.Value - currentMousePosition).x;
                 transform.Translate(Vector3.left * delta * Speed * Time.deltaTime, Space.Self);
+                
             }
 
             _previousMousePosition = currentMousePosition;
