@@ -34,14 +34,16 @@ public class TimeRewind : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-       // ------ PC USE ------
-		if (Input.GetKeyDown(KeyCode.Return) && collect.IsItEnoughFlies == true) // Add Here - && NumberOfFlies >=2 
+        accelerationDir = Input.acceleration;
+        // ------ PC USE ------                  ------ PHONE USE ------   
+        if ((Input.GetKeyDown(KeyCode.Return) || (accelerationDir.sqrMagnitude >= HowHardToShake)) && collect.IsItEnoughFlies == true) // Add Here - && NumberOfFlies >=2 
 			StartRewind();
         if (Input.GetKeyUp(KeyCode.Return))
 			StopRewind();
-      // ------ PHONE USE ------      
-        /*accelerationDir = Input.acceleration;
 
+      //    
+        accelerationDir = Input.acceleration;
+        /*
         if (accelerationDir.sqrMagnitude >= HowHardToShake)
         {
             StartRewind();
