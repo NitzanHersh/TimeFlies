@@ -21,6 +21,8 @@ TagManager:
   - MediumBackwardsPusher
   - HardBackwardsPusher
   - TimeFly
+  - PlayerDeathCanvas
+  - LevelComplete
   layers:
   - Default
   - TransparentFX

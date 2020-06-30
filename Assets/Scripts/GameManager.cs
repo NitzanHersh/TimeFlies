@@ -1,18 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     private GameObject _player;
-    // Start is called before the first frame update
+    private GameObject _playerDeathCanvas;
+
+
     void Start()
     {
-        _player = GameObject.FindGameObjectWithTag("Player");   
+        _player = GameObject.FindGameObjectWithTag("Player");
+        _playerDeathCanvas = GameObject.FindGameObjectWithTag("PlayerDeathCanvas");
+        _playerDeathCanvas.SetActive(false);
+        _player.GetComponent<Rigidbody>().isKinematic = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (_player.transform.position.y < -35)
@@ -25,25 +31,48 @@ public class GameManager : MonoBehaviour
             RestartLevel();
         }
     }
-
-    void RestartLevel()
+    public void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            Debug.Log("Level Complete");
+
+            LevelComplete();    
+        }
+    }
+
+    public void LevelComplete()
+    {
+        SceneManager.LoadScene("LevelComplete");
+    }
+
+
+
     void PlayerDeath()
     {
-        //Load a Scene with 2 buttons: 1) Play again! 2) Back to Main Menu
+        //SceneManager.LoadScene("PlayerDeath");
+        _playerDeathCanvas.SetActive(true);
+        _player.GetComponent<Rigidbody>().isKinematic = true;
     }
 
-    void PlayerWin()
+
+
+ 
+
+
+    void QuitGame ()
     {
-        //Load Credits
-        //Add 2 buttons: 1. Quit 2. Main Menu
+        Application.Quit();
     }
 
-    void FinishLevel()
-    {
-        // Load a Scene with 3 buttons: 1) Play again! 2) Next Level 3)Back to Main Menu
-    }
+
+
+
+    
 }
