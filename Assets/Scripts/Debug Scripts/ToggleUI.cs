@@ -10,7 +10,7 @@ public class ToggleUI : MonoBehaviour
     {
         if(newBool == true)
         {
-            
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody>().isKinematic = true;
             UICanvas.SetActive(true);
             UIToggle.SetActive(false);
         }
@@ -20,8 +20,14 @@ public class ToggleUI : MonoBehaviour
     {
         if (newBool == true)
         {
+            Invoke("PlayerGo", 0.7f);
             UICanvas.SetActive(false);
             UIToggle.SetActive(true);
         }
+    }
+
+    public void PlayerGo()
+    {
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody>().isKinematic = false;
     }
 }
