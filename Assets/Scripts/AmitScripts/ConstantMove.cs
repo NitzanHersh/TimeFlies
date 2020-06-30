@@ -6,7 +6,8 @@ public class ConstantMove : MonoBehaviour
 {
     public Vector3 Speed; // C Sharp convention to use a capital 'S' since this variable is public
     public Rigidbody rb;
-   
+    //public float Limit = 4.5f;
+
 
     private void Start()
     {
@@ -19,7 +20,7 @@ public class ConstantMove : MonoBehaviour
 
     private void Update()
     {
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -4.5f, 4.5f), transform.position.y, transform.position.z);
+        //transform.position = new Vector3(Mathf.Clamp(transform.position.x, -Limit, Limit), transform.position.y, transform.position.z);
     }
 
     //Line For Debug Menu
