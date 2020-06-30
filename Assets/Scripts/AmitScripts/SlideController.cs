@@ -6,6 +6,7 @@ public class SlideController : MonoBehaviour
 {
     
     public float Speed;
+    public float Limit = 4.5f;
 
     private Vector2? _previousMousePosition = null; // we use '_' because it's a private variable. we use ? to allow Vector 2 to be null
     
@@ -28,8 +29,11 @@ public class SlideController : MonoBehaviour
         }
 
         else _previousMousePosition = null;
-        
+
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -Limit, Limit), transform.position.y, transform.position.z);
     }
+
+}
 /*
 
 
@@ -64,4 +68,4 @@ else _previousMousePosition = null;
 
 }
 */
-}
+
