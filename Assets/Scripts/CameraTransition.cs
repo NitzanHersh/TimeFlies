@@ -20,18 +20,21 @@ public class CameraTransition : MonoBehaviour
         var startTime = Time.time;
         var factor = (Time.time - startTime) / Duration;
         var startPosition = transform.position;
-  
+        var startRotation = transform.rotation;
 
+       
         _transitioning = true;
 
         while(factor < 1)
         {
             transform.position = Vector3.Lerp(startPosition, Positions[newIndex].position, factor);
+            transform.rotation = Quaternion.Lerp(startRotation, Positions[newIndex].rotation, factor);
             yield return null;
             factor = (Time.time - startTime) / Duration;
         }
 
         _transitioning = false;
+     
 
         transform.position = Positions[newIndex].position;
 
@@ -50,30 +53,18 @@ public class CameraTransition : MonoBehaviour
 
     public void ToggleCamera(int index)
     {
-
-        if (index == 0)
-        {
-            StartCoroutine(ChangeCamera(index));
-
-        }
-        if (index == 1)
-        {
-            StartCoroutine(ChangeCamera(index));
-        }
-        if (index == 2)
-        {
-            StartCoroutine(ChangeCamera(index));
-        }
-        if (index == 3)
-        {
-            StartCoroutine(ChangeCamera(index));
-        }
-
+        StartCoroutine(ChangeCamera(index));
         _index = index;
     }
 
     private void Update()
     {
+        if (_transitioning)
+        {
+            return;
+        }
+
         transform.position = Positions[_index].position;
+        transform.rotation = Positions[_index].rotation;
     }
 }
