@@ -53,7 +53,7 @@ public class BackwardsPushers : MonoBehaviour
             Debug.Log("We Hit A Medium Backwards Pusher");
             PlayerAnimator.SetBool("isPushedBack", true);
             rb.velocity += Vector3.back * overAllBackwardsPush;
-            Invoke("BackToRun", 0.7f);
+            Invoke("BackToRun", 0.4f);
         }
 
         if (collider.gameObject.tag == "HardBackwardsPusher")

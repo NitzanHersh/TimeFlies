@@ -2370,6 +2370,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31b6481ad7e3fdd43aa4d5e528596775, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &73907105 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3006839953423429873, guid: d69ea953a8cd12b4e8f27a03e1af655b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1853079637}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &73907106 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3006839953433272169, guid: d69ea953a8cd12b4e8f27a03e1af655b,
@@ -60510,6 +60516,11 @@ PrefabInstance:
       propertyPath: JumpVelocity
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1029811233865381011, guid: d69ea953a8cd12b4e8f27a03e1af655b,
+        type: 3}
+      propertyPath: PlayerAnimator
+      value: 
+      objectReference: {fileID: 73907105}
     - target: {fileID: 3006839953432773257, guid: d69ea953a8cd12b4e8f27a03e1af655b,
         type: 3}
       propertyPath: m_Name
@@ -60615,6 +60626,11 @@ PrefabInstance:
       propertyPath: HardPushMultiplier
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4610341185802406973, guid: d69ea953a8cd12b4e8f27a03e1af655b,
+        type: 3}
+      propertyPath: PlayerAnimator
+      value: 
+      objectReference: {fileID: 73907105}
     - target: {fileID: 5266928551081947649, guid: d69ea953a8cd12b4e8f27a03e1af655b,
         type: 3}
       propertyPath: text
@@ -72841,6 +72857,16 @@ PrefabInstance:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 73907103}
+    - target: {fileID: 8380397019488546389, guid: 29d6a1d89c2a76b4ba756d6de9701a0e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8380397019674524030, guid: 29d6a1d89c2a76b4ba756d6de9701a0e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8380397019832392896, guid: 29d6a1d89c2a76b4ba756d6de9701a0e,
         type: 3}
       propertyPath: m_Name

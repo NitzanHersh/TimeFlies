@@ -255,6 +255,7 @@ GameObject:
   - component: {fileID: 1029811233865381011}
   - component: {fileID: 728094169288485456}
   - component: {fileID: 5266928551081947649}
+  - component: {fileID: 6608863115125081633}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -343,7 +344,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recordTime: 0
   HowHardToShake: 0
-  col: {fileID: 0}
+  NumberFliesNeededForRewind: 2
+  collect: {fileID: 0}
 --- !u!114 &418738943858813363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -373,6 +375,7 @@ MonoBehaviour:
   MediumPushMultiplier: 1.5
   HardPushMultiplier: 3
   SpeedIncreaseValue: 5
+  PlayerAnimator: {fileID: 0}
 --- !u!114 &1029811233865381011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -389,6 +392,7 @@ MonoBehaviour:
   MediumJumpMultiplier: 2
   HighJumpMultiplier: 4
   FallMultiplier: 2.5
+  PlayerAnimator: {fileID: 0}
 --- !u!114 &728094169288485456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -421,7 +425,19 @@ MonoBehaviour:
   MediumSpeedMultiplier: 1.5
   HighSpeedMultiplier: 3
   SpeedDecayValue: 5
-  text: {fileID: 0}
+  Text: {fileID: 0}
+--- !u!114 &6608863115125081633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3006839953432773257}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a301740f4d32504fa5ce9ffaaa0447c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3006839953432773265
 GameObject:
   m_ObjectHideFlags: 0
