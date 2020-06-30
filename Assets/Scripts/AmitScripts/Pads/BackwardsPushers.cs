@@ -10,6 +10,7 @@ public class BackwardsPushers : MonoBehaviour
     public float MediumPushMultiplier = 1.5f;
     public float HardPushMultiplier = 3f;
     public float SpeedIncreaseValue = 5f;
+    public Animator PlayerAnimator;
 
     Vector3 PlayerSpeed;
     Rigidbody rb;
@@ -41,21 +42,32 @@ public class BackwardsPushers : MonoBehaviour
         {
             overAllBackwardsPush =  PushBackValue + PlayerSpeed.z;    
             Debug.Log("We Hit A Soft Backwards Pusher");
+            PlayerAnimator.SetBool("isPushedBack", true);
             rb.velocity += Vector3.back * overAllBackwardsPush;
+            Invoke("BackToRun", 0.4f);
         }
 
         if (collider.gameObject.tag == "MediumBackwardsPusher")
         {
             overAllBackwardsPush = (PushBackValue * MediumPushMultiplier) + PlayerSpeed.z;
             Debug.Log("We Hit A Medium Backwards Pusher");
+            PlayerAnimator.SetBool("isPushedBack", true);
             rb.velocity += Vector3.back * overAllBackwardsPush;
+            Invoke("BackToRun", 0.7f);
         }
 
         if (collider.gameObject.tag == "HardBackwardsPusher")
         {
             overAllBackwardsPush = (PushBackValue * HardPushMultiplier) + PlayerSpeed.z;
             Debug.Log("We Hit A Hard Backwards Pusher");
+            PlayerAnimator.SetBool("isPushedBack", true);
             rb.velocity += Vector3.back * overAllBackwardsPush;
+            Invoke("BackToRun", 1.3f);
         }
+    }
+
+    void BackToRun()
+    {
+        PlayerAnimator.SetBool("isPushedBack", false);
     }
 }
