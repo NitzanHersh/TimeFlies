@@ -14,7 +14,7 @@ public class Collect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        NumberOfTImeFliesCollected.text = "You collected" + " " + CollectedTimeFlies.ToString() + " " + " Time Flies!";
+        NumberOfTImeFliesCollected.text = "You Collected" + " " + CollectedTimeFlies.ToString() + " " + " Time Flies!";
 
    
     }
@@ -35,5 +35,14 @@ public class Collect : MonoBehaviour
          
         }
 
+    }
+
+
+    //This line is for debug menu
+
+    public void AdjustNumOfFlies(int newNum)
+    {
+        CurrentFliesAmout = newNum;
+        IsItEnoughFlies = true;
     }
 }

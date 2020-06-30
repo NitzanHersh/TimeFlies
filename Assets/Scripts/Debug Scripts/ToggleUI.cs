@@ -11,6 +11,7 @@ public class ToggleUI : MonoBehaviour
         if(newBool == true)
         {
             GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody>().isKinematic = true;
+            Debug.Log("FoundPlayer" + GameObject.FindGameObjectWithTag("Player").transform.position);
             UICanvas.SetActive(true);
             UIToggle.SetActive(false);
         }
