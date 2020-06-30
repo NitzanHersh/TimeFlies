@@ -12,6 +12,8 @@ public class JumpPads : MonoBehaviour
 
     public float FallMultiplier = 2.5f;
 
+    public Animator PlayerAnimator;
+
     [Space (10)]
 
     Rigidbody rb;
@@ -21,10 +23,12 @@ public class JumpPads : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         move = GetComponent<ConstantMove>();
+        
     }
 
     private void Update()
     {
+
         if (rb.velocity.y < move.Speed.z) // Makes the "Fall" feel more juicy
         {
             rb.velocity += Vector3.up * Physics.gravity.y * (FallMultiplier - 1) * Time.deltaTime;
@@ -37,21 +41,33 @@ public class JumpPads : MonoBehaviour
         if (collider.gameObject.tag == "JumpPadLow")
         {
             Debug.Log("We Hit A Jump Pad Low");
+            PlayerAnimator.SetBool("isJumping", true);
             rb.velocity += Vector3.up * JumpVelocity;
+            Invoke("BackToRun", 0.4f);
         }
         if (collider.gameObject.tag == "JumpPadMedium")
         {
             Debug.Log("We Hit A Jump Pad Medium");
+            PlayerAnimator.SetBool("isJumping", true);
             rb.velocity += Vector3.up * JumpVelocity * MediumJumpMultiplier;
+            Invoke("BackToRun", 0.7f);
+            
         }
 
         if (collider.gameObject.tag == "JumpPadHigh")
             {
             Debug.Log("We Hit A Jump Pad High");
+            PlayerAnimator.SetBool("isJumping", true);
             rb.velocity += Vector3.up * JumpVelocity * HighJumpMultiplier;
+            Invoke("BackToRun", 1.5f);
 
         }
 
         
+    }
+
+    void BackToRun()
+    {
+        PlayerAnimator.SetBool("isJumping", false);
     }
 }
