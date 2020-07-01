@@ -7,6 +7,13 @@ using TMPro;
 
 public class SceneManagment : MonoBehaviour
 {
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            QuitGame();
+        }
+    }
 
     public void LoadNextLevel()
     {
@@ -48,9 +55,29 @@ public class SceneManagment : MonoBehaviour
 
     //Load Level Without Graphics
 
+    public void LoadLevel_1()
+    {
+
+        SceneManager.LoadScene("Level_1");
+
+    }
+
     public void LoadLevel_2()
     {
+
         SceneManager.LoadScene("Level_2");
 
+    }
+
+    public void LoadLevel_3()
+    {
+
+        SceneManager.LoadScene("Level_3");
+
+    }
+
+    void QuitGame()
+    {
+        Application.Quit();
     }
 }

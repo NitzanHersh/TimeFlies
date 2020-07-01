@@ -31,10 +31,7 @@ public class GameManager : MonoBehaviour
             PlayerDeath();
         }
 
-        if (Input.GetKey(KeyCode.Escape))
-        {
-            QuitGame();
-        }
+  
     }
     public void RestartLevel()
     {
@@ -73,10 +70,7 @@ public class GameManager : MonoBehaviour
  
 
 
-    void QuitGame ()
-    {
-        Application.Quit();
-    }
+   
 
 
 

@@ -41,8 +41,9 @@ public class TimeRewind : MonoBehaviour {
         if (Input.GetKeyUp(KeyCode.Return))
 			StopRewind();
 
-      //    
-        accelerationDir = Input.acceleration;
+          accelerationDir = Input.acceleration;
+
+
         /*
         if (accelerationDir.sqrMagnitude >= HowHardToShake)
         {
