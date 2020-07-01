@@ -120,4 +120,12 @@ public class TimeRewind : MonoBehaviour {
         }
         slide.enabled = true;
     }
+
+
+    public void AdjustShakeSpeed(float newSpeed)
+    {
+        HowHardToShake = newSpeed;
+    }
+
+   
 }

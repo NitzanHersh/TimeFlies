@@ -32,7 +32,10 @@ public class SlideController : MonoBehaviour
 
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, -Limit, Limit), transform.position.y, transform.position.z);
     }
-
+    public void AdjustSideSpeed(float newSpeed)
+    {
+        Speed = newSpeed;
+    }
 }
 /*
 

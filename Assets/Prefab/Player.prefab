@@ -359,6 +359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 0
+  Limit: 4.5
 --- !u!114 &4610341185802406973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -375,7 +376,7 @@ MonoBehaviour:
   MediumPushMultiplier: 1.5
   HardPushMultiplier: 3
   SpeedIncreaseValue: 5
-  PlayerAnimator: {fileID: 0}
+  PlayerAnimator: {fileID: 3006839953423429873}
 --- !u!114 &1029811233865381011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -392,7 +393,7 @@ MonoBehaviour:
   MediumJumpMultiplier: 2
   HighJumpMultiplier: 4
   FallMultiplier: 2.5
-  PlayerAnimator: {fileID: 0}
+  PlayerAnimator: {fileID: 3006839953423429873}
 --- !u!114 &728094169288485456
 MonoBehaviour:
   m_ObjectHideFlags: 0
