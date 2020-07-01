@@ -5,8 +5,9 @@ using UnityEngine.UI;
 
 public class ToggleUI : MonoBehaviour
 {
-    public GameObject UICanvas;
-    public GameObject UIToggle;
+    public GameObject ShowMenu;
+    public GameObject HideMenu;
+    public GameObject CamPosMenu;
 
     public void ShowUI(bool newBool)
     {
@@ -14,8 +15,9 @@ public class ToggleUI : MonoBehaviour
         {
             GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody>().isKinematic = true;
             Debug.Log("FoundPlayer" + GameObject.FindGameObjectWithTag("Player").transform.position);
-            UICanvas.SetActive(true);
-            UIToggle.SetActive(false);
+            CamPosMenu.SetActive(true);
+            HideMenu.SetActive(true);
+            ShowMenu.SetActive(false);
         }
     }
 
@@ -24,8 +26,10 @@ public class ToggleUI : MonoBehaviour
         if (newBool == true)
         {
             Invoke("PlayerGo", 0.5f);
-            UICanvas.SetActive(false);
-            UIToggle.SetActive(true);
+            ShowMenu.SetActive(true);
+            CamPosMenu.SetActive(false);
+            HideMenu.SetActive(false);
+
         }
     }
 
