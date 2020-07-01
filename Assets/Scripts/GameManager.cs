@@ -51,7 +51,6 @@ public class GameManager : MonoBehaviour
 
     public void LevelComplete()
     {
-        //SceneManager.LoadScene("LevelComplete");
         _levelCompleteCanvas.SetActive(true);
         _player.GetComponent<Rigidbody>().isKinematic = true;
     }
@@ -60,7 +59,6 @@ public class GameManager : MonoBehaviour
 
     void PlayerDeath()
     {
-        //SceneManager.LoadScene("PlayerDeath");
         _playerDeathCanvas.SetActive(true);
         _player.GetComponent<Rigidbody>().isKinematic = true;
     }

@@ -8,15 +8,15 @@ public class SlideController : MonoBehaviour
     public float Speed;
     public float Limit = 4.5f;
 
-    private Vector2? _previousMousePosition = null; // we use '_' because it's a private variable. we use ? to allow Vector 2 to be null
+    private Vector2? _previousMousePosition = null; 
 
     private void Update()
 
     {
-        if (Input.GetMouseButton(0))  // GetMouseButtonUp or GetMouseButtonDown adds a bool value for ONE frame only. GetMouseButton Gets it as long as the button is held // 0 means Left mouse button
+        if (Input.GetMouseButton(0))  
 
         {
-            Vector2 currentMousePosition = Input.mousePosition; // var means deduce from the vaule I give you, what variable type is should be
+            Vector2 currentMousePosition = Input.mousePosition; 
 
             if (_previousMousePosition.HasValue)
             {
@@ -34,43 +34,4 @@ public class SlideController : MonoBehaviour
     }
 }
 
-    //public void AdjustSideSpeed(float newSpeed)
-    //{
-      //  Speed = newSpeed;
-    //}
-
-/*
-
-
-public float Speed;
-
-private Vector2? _previousMousePosition = null;
-
-Rigidbody rb;
-
-    private void Start()
-    {
-        rb = GetComponent<Rigidbody>();
-    }
-
-    private void Update()
-{
-if (Input.GetMouseButton(0)) 
-
-{
-    Vector2 currentMousePosition = Input.mousePosition;
-
-    if (_previousMousePosition.HasValue)
-    {
-        var delta = (_previousMousePosition.Value - currentMousePosition).x;
-                rb.AddForce(Vector3.left * delta * Speed * Time.deltaTime);
-    }
-
-    _previousMousePosition = currentMousePosition;
-}
-
-else _previousMousePosition = null;
-
-}
-*/
 

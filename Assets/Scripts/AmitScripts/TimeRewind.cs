@@ -10,7 +10,6 @@ public class TimeRewind : MonoBehaviour {
     public float HowHardToShake;
     public int NumberFliesNeededForRewind = 2;
     public Collect collect;
-    //public Collider col;
 
     private Collider[] _colliders;
 
@@ -22,7 +21,6 @@ public class TimeRewind : MonoBehaviour {
 
     Vector3 accelerationDir;
 
-	// Use this for initialization
 	void Start () {
 		pointsInTime = new List<PointInTime>();
 		rb = GetComponent<Rigidbody>();
@@ -31,29 +29,17 @@ public class TimeRewind : MonoBehaviour {
   
 	}
 	
-	// Update is called once per frame
 	void Update ()
     {
         accelerationDir = Input.acceleration;
         // ------ PC USE ------                  ------ PHONE USE ------   
-        if ((Input.GetKeyDown(KeyCode.Return) || (accelerationDir.sqrMagnitude >= HowHardToShake)) && collect.IsItEnoughFlies == true) // Add Here - && NumberOfFlies >=2 
+        if ((Input.GetKeyDown(KeyCode.Return) || (accelerationDir.sqrMagnitude >= HowHardToShake)) && collect.IsItEnoughFlies == true) 
 			StartRewind();
         if (Input.GetKeyUp(KeyCode.Return))
 			StopRewind();
 
           accelerationDir = Input.acceleration;
 
-
-        /*
-        if (accelerationDir.sqrMagnitude >= HowHardToShake)
-        {
-            StartRewind();
-        }
-        else
-        { 
-            StopRewind();
-        }
-        */
     }
 
 	void FixedUpdate ()
@@ -95,7 +81,6 @@ public class TimeRewind : MonoBehaviour {
 	public void StartRewind ()
 	{
 		isRewinding = true;
-        //col.enabled = false;
         foreach (var collider in _colliders)
         {
             collider.enabled = false;
@@ -113,7 +98,6 @@ public class TimeRewind : MonoBehaviour {
 	public void StopRewind ()
 	{
         isRewinding = false;
-        //col.enabled = true;
         foreach (var collider in _colliders)
         {
             collider.enabled = true;

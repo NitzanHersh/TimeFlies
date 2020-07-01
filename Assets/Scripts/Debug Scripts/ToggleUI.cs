@@ -12,7 +12,7 @@ public class ToggleUI : MonoBehaviour
 
     public void ShowUI()
     {
-        //GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody>().isKinematic = true;
+
         Player.GetComponent<Rigidbody>().isKinematic = true;
         Debug.Log("FoundPlayer" + Player.transform.position);
         CamPosMenu.SetActive(true);
@@ -32,7 +32,7 @@ public class ToggleUI : MonoBehaviour
 
     public void PlayerGo()
     {
-        //GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody>().isKinematic = false;
+
         Player.GetComponent<Rigidbody>().isKinematic = false;
     }
 }
