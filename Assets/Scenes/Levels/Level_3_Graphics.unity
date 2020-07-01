@@ -2310,7 +2310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentFliesAmout: 0
-  NumberOfTImeFliesCollected: {fileID: 1199544382}
+  NumberOfTImeFliesCollected: {fileID: 101911700}
   IsItEnoughFlies: 0
 --- !u!114 &73907108
 MonoBehaviour:
@@ -2870,6 +2870,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8380397019107549025, guid: 29d6a1d89c2a76b4ba756d6de9701a0e,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1853079639}
+    - target: {fileID: 8380397019107549025, guid: 29d6a1d89c2a76b4ba756d6de9701a0e,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AdjustSpeed
+      objectReference: {fileID: 0}
     - target: {fileID: 8380397019488546389, guid: 29d6a1d89c2a76b4ba756d6de9701a0e,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -2942,6 +2952,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29d6a1d89c2a76b4ba756d6de9701a0e, type: 3}
+--- !u!114 &101911700 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8380397020367703326, guid: 29d6a1d89c2a76b4ba756d6de9701a0e,
+    type: 3}
+  m_PrefabInstance: {fileID: 101911699}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &102327124
 GameObject:
   m_ObjectHideFlags: 0
@@ -43429,7 +43451,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1781397158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45115,6 +45137,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1853079637}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1853079639 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5937918841034392577, guid: d69ea953a8cd12b4e8f27a03e1af655b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1853079637}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73907096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31b6481ad7e3fdd43aa4d5e528596775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1859225890
 PrefabInstance:
   m_ObjectHideFlags: 0
