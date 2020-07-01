@@ -2025,6 +2025,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1853079637}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &73907105 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3006839953423429873, guid: d69ea953a8cd12b4e8f27a03e1af655b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1853079637}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &73907107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39076,6 +39082,11 @@ PrefabInstance:
       propertyPath: JumpVelocity
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1029811233865381011, guid: d69ea953a8cd12b4e8f27a03e1af655b,
+        type: 3}
+      propertyPath: PlayerAnimator
+      value: 
+      objectReference: {fileID: 73907105}
     - target: {fileID: 3006839953432773257, guid: d69ea953a8cd12b4e8f27a03e1af655b,
         type: 3}
       propertyPath: m_Name
@@ -39181,6 +39192,11 @@ PrefabInstance:
       propertyPath: HardPushMultiplier
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4610341185802406973, guid: d69ea953a8cd12b4e8f27a03e1af655b,
+        type: 3}
+      propertyPath: PlayerAnimator
+      value: 
+      objectReference: {fileID: 73907105}
     - target: {fileID: 5266928551081947649, guid: d69ea953a8cd12b4e8f27a03e1af655b,
         type: 3}
       propertyPath: text

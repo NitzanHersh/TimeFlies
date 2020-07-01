@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 {
     private GameObject _player;
     private GameObject _playerDeathCanvas;
+    private GameObject _levelCompleteCanvas;
 
 
     void Start()
@@ -16,6 +17,10 @@ public class GameManager : MonoBehaviour
         _player = GameObject.FindGameObjectWithTag("Player");
         _playerDeathCanvas = GameObject.FindGameObjectWithTag("PlayerDeathCanvas");
         _playerDeathCanvas.SetActive(false);
+
+        _levelCompleteCanvas = GameObject.FindGameObjectWithTag("LevelComplete");
+        _levelCompleteCanvas.SetActive(false);
+
         _player.GetComponent<Rigidbody>().isKinematic = false;
     }
 
@@ -28,7 +33,7 @@ public class GameManager : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Escape))
         {
-            RestartLevel();
+            QuitGame();
         }
     }
     public void RestartLevel()
@@ -49,7 +54,9 @@ public class GameManager : MonoBehaviour
 
     public void LevelComplete()
     {
-        SceneManager.LoadScene("LevelComplete");
+        //SceneManager.LoadScene("LevelComplete");
+        _levelCompleteCanvas.SetActive(true);
+        _player.GetComponent<Rigidbody>().isKinematic = true;
     }
 
 

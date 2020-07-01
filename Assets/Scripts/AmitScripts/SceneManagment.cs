@@ -45,4 +45,12 @@ public class SceneManagment : MonoBehaviour
         SceneManager.LoadScene("Level_3_Graphics");
 
     }
+
+    //Load Level Without Graphics
+
+    public void LoadLevel_2()
+    {
+        SceneManager.LoadScene("Level_2");
+
+    }
 }
