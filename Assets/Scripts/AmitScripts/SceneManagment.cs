@@ -20,6 +20,16 @@ public class SceneManagment : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
+    public void LoadInstructions()
+    {
+        SceneManager.LoadScene("Instructions");
+    }
+
+    public void LoadOpeningScene()
+    {
+        SceneManager.LoadScene("OpeningScene");
+    }
+
 
 
     public void LoadMainMenu()
