@@ -246,8 +246,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1330583155524990873}
-  - component: {fileID: 1510665727797098206}
-  - component: {fileID: 8417668194457794949}
   m_Layer: 0
   m_Name: Books2
   m_TagString: Border
@@ -294,35 +292,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1510665727797098206
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1818608690985381155}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.7546944, y: 0.2108842, z: 0.13447244}
-  m_Center: {x: 0.0014103055, y: 0.013141394, z: -0.0024424195}
---- !u!54 &8417668194457794949
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1818608690985381155}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 3
 --- !u!1 &2005335536212483525
 GameObject:
   m_ObjectHideFlags: 0
