@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class SlideController : MonoBehaviour
 {
-    
+
     public float Speed;
     public float Limit = 4.5f;
 
     private Vector2? _previousMousePosition = null; // we use '_' because it's a private variable. we use ? to allow Vector 2 to be null
-    
+
     private void Update()
 
     {
@@ -22,7 +22,7 @@ public class SlideController : MonoBehaviour
             {
                 var delta = (_previousMousePosition.Value - currentMousePosition).x;
                 transform.Translate(Vector3.left * delta * Speed * Time.deltaTime, Space.Self);
-                
+
             }
 
             _previousMousePosition = currentMousePosition;
@@ -32,11 +32,13 @@ public class SlideController : MonoBehaviour
 
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, -Limit, Limit), transform.position.y, transform.position.z);
     }
-    public void AdjustSideSpeed(float newSpeed)
-    {
-        Speed = newSpeed;
-    }
 }
+
+    //public void AdjustSideSpeed(float newSpeed)
+    //{
+      //  Speed = newSpeed;
+    //}
+
 /*
 
 

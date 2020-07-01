@@ -256,6 +256,7 @@ GameObject:
   - component: {fileID: 728094169288485456}
   - component: {fileID: 5266928551081947649}
   - component: {fileID: 6608863115125081633}
+  - component: {fileID: 2978111696860047801}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -328,7 +329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31b6481ad7e3fdd43aa4d5e528596775, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: {x: 0, y: 0, z: 30}
+  Speed: {x: 0, y: 0, z: 20}
   rb: {fileID: 1011077789356863511}
 --- !u!114 &4128745973180669011
 MonoBehaviour:
@@ -342,8 +343,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4330255b0eaa49418ed9cd7e314e1a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  recordTime: 0
-  HowHardToShake: 0
+  recordTime: 2
+  HowHardToShake: 2
   NumberFliesNeededForRewind: 2
   collect: {fileID: 0}
 --- !u!114 &418738943858813363
@@ -358,7 +359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a32bf32c6d73da488165af106b465a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 0
+  Speed: 0.5
   Limit: 4.5
 --- !u!114 &4610341185802406973
 MonoBehaviour:
@@ -439,6 +440,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a301740f4d32504fa5ce9ffaaa0447c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2978111696860047801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3006839953432773257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2adeb869e364a17408d82ea162134a45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentFliesAmout: 0
+  NumberOfTImeFliesCollected: {fileID: 0}
+  IsItEnoughFlies: 0
 --- !u!1 &3006839953432773265
 GameObject:
   m_ObjectHideFlags: 0

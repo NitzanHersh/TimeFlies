@@ -23,7 +23,7 @@ public class ToggleUI : MonoBehaviour
     {
         if (newBool == true)
         {
-            Invoke("PlayerGo", 0.7f);
+            Invoke("PlayerGo", 0.5f);
             UICanvas.SetActive(false);
             UIToggle.SetActive(true);
         }
