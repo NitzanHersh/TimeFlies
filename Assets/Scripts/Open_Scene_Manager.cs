@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Open_Scene_Manager : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class Open_Scene_Manager : MonoBehaviour
     {
      if(transform.position.y > 5.5f)
         {
-            Debug.Log("change scene");
+            SceneManager.LoadScene("Level_1_Graphics");
         }
     }
 }
