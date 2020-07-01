@@ -5,34 +5,37 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/MainMenu.unity
     guid: 91cc04326d19731469c01f2c048e69fc
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/Instructions.unity
     guid: 176726a52b6cc384e8f1b1f79c22497b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/OpeningScene.unity
     guid: 50e0057872229bd44acc39c628afce94
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/Level_1_Graphics.unity
     guid: 59481344e1b097545aabfa46a69cd1a3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/Level_2_Graphics.unity
     guid: 96fb51fe72cae9040b7f4b7832605b9f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/Level_3_Graphics.unity
     guid: 19b8669e0a9776c47b58f62673adf829
   - enabled: 1
     path: Assets/Scenes/Levels/Level_1.unity
     guid: 4fee0f0ba7b046545a30f04ee44b37bd
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/Level_2.unity
     guid: 3709883ff44c5944987503cb2bd3b4fe
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/Level_3.unity
     guid: bd8f0571a3972634faef7df05df22102
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/Credits.unity
     guid: c5f47a64ee35b2c48b75b9150e633e7f
+  - enabled: 0
+    path: Assets/Scenes/Levels/TestLevel.unity
+    guid: 5148b77981d666b49bd3179af70efabc
   m_configObjects: {}
